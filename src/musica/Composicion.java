@@ -20,7 +20,6 @@ public class Composicion {
     private int indiceSolicitudes;
     private int limiteSolicitudes;
 
-    // 🔹 Constructor
     public Composicion(String titulo, int minutos, int segundos,
                        String genero, LocalDate fechaRegistro,
                        LocalDate fechaEstreno, Musico autor,
@@ -43,7 +42,6 @@ public class Composicion {
         this.indiceSolicitudes = 0;
     }
 
-    // 🔹 Métodos
 
     public void agregarInterprete(Musico interprete){
         if(this.indiceInterpretes < this.limiteInterpretes){
@@ -63,7 +61,6 @@ public class Composicion {
         return this.titulo;
     }
 
-    // 🔹 toString
     @Override
     public String toString() {
         return "Composicion{" +
