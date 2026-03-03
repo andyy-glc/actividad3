@@ -10,7 +10,6 @@ public class Solicitud {
     private Compañia compañia;
     private Composicion composicion;
 
-    // 🔹 Constructor
     public Solicitud(Musico interprete,
                      LocalDate fechaSolicitud,
                      Compañia compañia,
@@ -22,7 +21,6 @@ public class Solicitud {
         this.composicion = composicion;
     }
 
-    // 🔹 Autorizar solicitud
     public void autorizar(LocalDate fechaAutorizacion){
         if(!fechaAutorizacion.isBefore(this.fechaSolicitud)){
             this.fechaAutorizacion = fechaAutorizacion;
@@ -30,32 +28,26 @@ public class Solicitud {
         }
     }
 
-    // 🔹 Obtener fecha solicitud
     public LocalDate getFechaSolicitud(){
         return this.fechaSolicitud;
     }
 
-    // 🔹 Obtener fecha autorizacion
     public LocalDate getFechaAutorizacion(){
         return this.fechaAutorizacion;
     }
 
-    // 🔹 Obtener interprete
     public Musico getInterprete(){
         return this.interprete;
     }
 
-    // 🔹 Obtener compania
     public Compañia getCompania(){
         return this.compañia;
     }
 
-    // 🔹 Obtener composicion
     public Composicion getComposicion(){
         return this.composicion;
     }
 
-    // 🔹 toString
     @Override
     public String toString() {
         return "Solicitud{" +
